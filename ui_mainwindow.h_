@@ -1,0 +1,597 @@
+/********************************************************************************
+** Form generated from reading UI file 'mainwindow.ui'
+**
+** Created: Fri 2. Dec 18:36:16 2011
+**      by: Qt User Interface Compiler version 4.7.4
+**
+** WARNING! All changes made in this file will be lost when recompiling UI file!
+********************************************************************************/
+
+#ifndef UI_MAINWINDOW_H
+#define UI_MAINWINDOW_H
+
+#include <QtCore/QVariant>
+#include <QtGui/QAction>
+#include <QtGui/QApplication>
+#include <QtGui/QButtonGroup>
+#include <QtGui/QComboBox>
+#include <QtGui/QHBoxLayout>
+#include <QtGui/QHeaderView>
+#include <QtGui/QLabel>
+#include <QtGui/QMainWindow>
+#include <QtGui/QMenuBar>
+#include <QtGui/QPushButton>
+#include <QtGui/QStatusBar>
+#include <QtGui/QTableWidget>
+#include <QtGui/QToolBar>
+#include <QtGui/QVBoxLayout>
+#include <QtGui/QWidget>
+
+QT_BEGIN_NAMESPACE
+
+class Ui_MainWindow
+{
+public:
+    QWidget *centralWidget;
+    QWidget *verticalLayoutWidget;
+    QVBoxLayout *verticalLayout_2;
+    QHBoxLayout *horizontalLayout;
+    QLabel *label;
+    QPushButton *CreateDBButton;
+    QPushButton *InsertButton;
+    QPushButton *ShowButton;
+    QTableWidget *tab;
+    QWidget *makers;
+    QHBoxLayout *horizontalLayout_3;
+    QVBoxLayout *verticalLayout;
+    QHBoxLayout *horizontalLayout_2;
+    QLabel *label_2;
+    QPushButton *addMakerButton;
+    QPushButton *showMakerButton;
+    QTableWidget *tabMaker;
+    QVBoxLayout *verticalLayout_3;
+    QHBoxLayout *horizontalLayout_4;
+    QLabel *label_3;
+    QPushButton *addTypeButton;
+    QPushButton *showTypeButton;
+    QTableWidget *tabType;
+    QWidget *bills;
+    QHBoxLayout *horizontalLayout_6;
+    QVBoxLayout *verticalLayout_4;
+    QHBoxLayout *horizontalLayout_7;
+    QLabel *label_4;
+    QPushButton *createBillButton;
+    QPushButton *showBillButton;
+    QTableWidget *tabBill;
+    QVBoxLayout *verticalLayout_9;
+    QHBoxLayout *horizontalLayout_11;
+    QLabel *label_7;
+    QPushButton *addListButton;
+    QPushButton *showListButton;
+    QTableWidget *tableList;
+    QHBoxLayout *horizontalLayout_10;
+    QLabel *label_9;
+    QLabel *labelTotal;
+    QLabel *label_8;
+    QLabel *labelSum;
+    QWidget *customers;
+    QHBoxLayout *horizontalLayout_8;
+    QVBoxLayout *verticalLayout_5;
+    QHBoxLayout *horizontalLayout_9;
+    QLabel *label_5;
+    QPushButton *addCustButton;
+    QPushButton *showCustButton;
+    QTableWidget *tableCust;
+    QHBoxLayout *horizontalLayout_5;
+    QLabel *label_6;
+    QComboBox *comboBoxUser;
+    QPushButton *userButton;
+    QPushButton *billButton;
+    QPushButton *makersButton;
+    QPushButton *custoersButton;
+    QPushButton *spoilerButton;
+    QMenuBar *menuBar;
+    QToolBar *mainToolBar;
+    QStatusBar *statusBar;
+
+    void setupUi(QMainWindow *MainWindow)
+    {
+        if (MainWindow->objectName().isEmpty())
+            MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
+        MainWindow->resize(1097, 471);
+        centralWidget = new QWidget(MainWindow);
+        centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
+        verticalLayoutWidget = new QWidget(centralWidget);
+        verticalLayoutWidget->setObjectName(QString::fromUtf8("verticalLayoutWidget"));
+        verticalLayoutWidget->setGeometry(QRect(10, 10, 1081, 401));
+        verticalLayout_2 = new QVBoxLayout(verticalLayoutWidget);
+        verticalLayout_2->setSpacing(6);
+        verticalLayout_2->setContentsMargins(5, 5, 5, 5);
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        verticalLayout_2->setSizeConstraint(QLayout::SetDefaultConstraint);
+        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
+        horizontalLayout = new QHBoxLayout();
+        horizontalLayout->setSpacing(6);
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        label = new QLabel(verticalLayoutWidget);
+        label->setObjectName(QString::fromUtf8("label"));
+
+        horizontalLayout->addWidget(label);
+
+        CreateDBButton = new QPushButton(verticalLayoutWidget);
+        CreateDBButton->setObjectName(QString::fromUtf8("CreateDBButton"));
+
+        horizontalLayout->addWidget(CreateDBButton);
+
+        InsertButton = new QPushButton(verticalLayoutWidget);
+        InsertButton->setObjectName(QString::fromUtf8("InsertButton"));
+
+        horizontalLayout->addWidget(InsertButton);
+
+        ShowButton = new QPushButton(verticalLayoutWidget);
+        ShowButton->setObjectName(QString::fromUtf8("ShowButton"));
+
+        horizontalLayout->addWidget(ShowButton);
+
+
+        verticalLayout_2->addLayout(horizontalLayout);
+
+        tab = new QTableWidget(verticalLayoutWidget);
+        if (tab->columnCount() < 8)
+            tab->setColumnCount(8);
+        QTableWidgetItem *__qtablewidgetitem = new QTableWidgetItem();
+        tab->setHorizontalHeaderItem(0, __qtablewidgetitem);
+        QTableWidgetItem *__qtablewidgetitem1 = new QTableWidgetItem();
+        tab->setHorizontalHeaderItem(1, __qtablewidgetitem1);
+        QTableWidgetItem *__qtablewidgetitem2 = new QTableWidgetItem();
+        tab->setHorizontalHeaderItem(2, __qtablewidgetitem2);
+        QTableWidgetItem *__qtablewidgetitem3 = new QTableWidgetItem();
+        tab->setHorizontalHeaderItem(3, __qtablewidgetitem3);
+        QTableWidgetItem *__qtablewidgetitem4 = new QTableWidgetItem();
+        tab->setHorizontalHeaderItem(4, __qtablewidgetitem4);
+        QTableWidgetItem *__qtablewidgetitem5 = new QTableWidgetItem();
+        tab->setHorizontalHeaderItem(5, __qtablewidgetitem5);
+        QTableWidgetItem *__qtablewidgetitem6 = new QTableWidgetItem();
+        tab->setHorizontalHeaderItem(6, __qtablewidgetitem6);
+        QTableWidgetItem *__qtablewidgetitem7 = new QTableWidgetItem();
+        tab->setHorizontalHeaderItem(7, __qtablewidgetitem7);
+        tab->setObjectName(QString::fromUtf8("tab"));
+
+        verticalLayout_2->addWidget(tab);
+
+        makers = new QWidget(verticalLayoutWidget);
+        makers->setObjectName(QString::fromUtf8("makers"));
+        horizontalLayout_3 = new QHBoxLayout(makers);
+        horizontalLayout_3->setSpacing(6);
+        horizontalLayout_3->setContentsMargins(5, 5, 5, 5);
+        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
+        verticalLayout = new QVBoxLayout();
+        verticalLayout->setSpacing(6);
+        verticalLayout->setContentsMargins(5, 5, 5, 5);
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        horizontalLayout_2 = new QHBoxLayout();
+        horizontalLayout_2->setSpacing(6);
+        horizontalLayout_2->setContentsMargins(5, 5, 5, 5);
+        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
+        label_2 = new QLabel(makers);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+
+        horizontalLayout_2->addWidget(label_2);
+
+        addMakerButton = new QPushButton(makers);
+        addMakerButton->setObjectName(QString::fromUtf8("addMakerButton"));
+
+        horizontalLayout_2->addWidget(addMakerButton);
+
+        showMakerButton = new QPushButton(makers);
+        showMakerButton->setObjectName(QString::fromUtf8("showMakerButton"));
+
+        horizontalLayout_2->addWidget(showMakerButton);
+
+
+        verticalLayout->addLayout(horizontalLayout_2);
+
+        tabMaker = new QTableWidget(makers);
+        if (tabMaker->columnCount() < 4)
+            tabMaker->setColumnCount(4);
+        QTableWidgetItem *__qtablewidgetitem8 = new QTableWidgetItem();
+        tabMaker->setHorizontalHeaderItem(0, __qtablewidgetitem8);
+        QTableWidgetItem *__qtablewidgetitem9 = new QTableWidgetItem();
+        tabMaker->setHorizontalHeaderItem(1, __qtablewidgetitem9);
+        QTableWidgetItem *__qtablewidgetitem10 = new QTableWidgetItem();
+        tabMaker->setHorizontalHeaderItem(2, __qtablewidgetitem10);
+        QTableWidgetItem *__qtablewidgetitem11 = new QTableWidgetItem();
+        tabMaker->setHorizontalHeaderItem(3, __qtablewidgetitem11);
+        tabMaker->setObjectName(QString::fromUtf8("tabMaker"));
+
+        verticalLayout->addWidget(tabMaker);
+
+
+        horizontalLayout_3->addLayout(verticalLayout);
+
+        verticalLayout_3 = new QVBoxLayout();
+        verticalLayout_3->setSpacing(6);
+        verticalLayout_3->setContentsMargins(5, 5, 5, 5);
+        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
+        horizontalLayout_4 = new QHBoxLayout();
+        horizontalLayout_4->setSpacing(6);
+        horizontalLayout_4->setContentsMargins(5, 5, 5, 5);
+        horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
+        label_3 = new QLabel(makers);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+
+        horizontalLayout_4->addWidget(label_3);
+
+        addTypeButton = new QPushButton(makers);
+        addTypeButton->setObjectName(QString::fromUtf8("addTypeButton"));
+
+        horizontalLayout_4->addWidget(addTypeButton);
+
+        showTypeButton = new QPushButton(makers);
+        showTypeButton->setObjectName(QString::fromUtf8("showTypeButton"));
+
+        horizontalLayout_4->addWidget(showTypeButton);
+
+
+        verticalLayout_3->addLayout(horizontalLayout_4);
+
+        tabType = new QTableWidget(makers);
+        if (tabType->columnCount() < 2)
+            tabType->setColumnCount(2);
+        QTableWidgetItem *__qtablewidgetitem12 = new QTableWidgetItem();
+        tabType->setHorizontalHeaderItem(0, __qtablewidgetitem12);
+        QTableWidgetItem *__qtablewidgetitem13 = new QTableWidgetItem();
+        tabType->setHorizontalHeaderItem(1, __qtablewidgetitem13);
+        tabType->setObjectName(QString::fromUtf8("tabType"));
+
+        verticalLayout_3->addWidget(tabType);
+
+
+        horizontalLayout_3->addLayout(verticalLayout_3);
+
+
+        verticalLayout_2->addWidget(makers);
+
+        bills = new QWidget(verticalLayoutWidget);
+        bills->setObjectName(QString::fromUtf8("bills"));
+        horizontalLayout_6 = new QHBoxLayout(bills);
+        horizontalLayout_6->setSpacing(6);
+        horizontalLayout_6->setContentsMargins(5, 5, 5, 5);
+        horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
+        verticalLayout_4 = new QVBoxLayout();
+        verticalLayout_4->setSpacing(6);
+        verticalLayout_4->setContentsMargins(5, 5, 5, 5);
+        verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
+        horizontalLayout_7 = new QHBoxLayout();
+        horizontalLayout_7->setSpacing(6);
+        horizontalLayout_7->setContentsMargins(5, 5, 5, 5);
+        horizontalLayout_7->setObjectName(QString::fromUtf8("horizontalLayout_7"));
+        label_4 = new QLabel(bills);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+
+        horizontalLayout_7->addWidget(label_4);
+
+        createBillButton = new QPushButton(bills);
+        createBillButton->setObjectName(QString::fromUtf8("createBillButton"));
+
+        horizontalLayout_7->addWidget(createBillButton);
+
+        showBillButton = new QPushButton(bills);
+        showBillButton->setObjectName(QString::fromUtf8("showBillButton"));
+
+        horizontalLayout_7->addWidget(showBillButton);
+
+
+        verticalLayout_4->addLayout(horizontalLayout_7);
+
+        tabBill = new QTableWidget(bills);
+        if (tabBill->columnCount() < 8)
+            tabBill->setColumnCount(8);
+        QTableWidgetItem *__qtablewidgetitem14 = new QTableWidgetItem();
+        tabBill->setHorizontalHeaderItem(0, __qtablewidgetitem14);
+        QTableWidgetItem *__qtablewidgetitem15 = new QTableWidgetItem();
+        tabBill->setHorizontalHeaderItem(1, __qtablewidgetitem15);
+        QTableWidgetItem *__qtablewidgetitem16 = new QTableWidgetItem();
+        tabBill->setHorizontalHeaderItem(2, __qtablewidgetitem16);
+        QTableWidgetItem *__qtablewidgetitem17 = new QTableWidgetItem();
+        tabBill->setHorizontalHeaderItem(3, __qtablewidgetitem17);
+        QTableWidgetItem *__qtablewidgetitem18 = new QTableWidgetItem();
+        tabBill->setHorizontalHeaderItem(4, __qtablewidgetitem18);
+        QTableWidgetItem *__qtablewidgetitem19 = new QTableWidgetItem();
+        tabBill->setHorizontalHeaderItem(5, __qtablewidgetitem19);
+        QTableWidgetItem *__qtablewidgetitem20 = new QTableWidgetItem();
+        tabBill->setHorizontalHeaderItem(6, __qtablewidgetitem20);
+        QTableWidgetItem *__qtablewidgetitem21 = new QTableWidgetItem();
+        tabBill->setHorizontalHeaderItem(7, __qtablewidgetitem21);
+        tabBill->setObjectName(QString::fromUtf8("tabBill"));
+
+        verticalLayout_4->addWidget(tabBill);
+
+
+        horizontalLayout_6->addLayout(verticalLayout_4);
+
+        verticalLayout_9 = new QVBoxLayout();
+        verticalLayout_9->setSpacing(6);
+        verticalLayout_9->setContentsMargins(5, 5, 5, 5);
+        verticalLayout_9->setObjectName(QString::fromUtf8("verticalLayout_9"));
+        horizontalLayout_11 = new QHBoxLayout();
+        horizontalLayout_11->setSpacing(6);
+        horizontalLayout_11->setContentsMargins(5, 5, 5, 5);
+        horizontalLayout_11->setObjectName(QString::fromUtf8("horizontalLayout_11"));
+        label_7 = new QLabel(bills);
+        label_7->setObjectName(QString::fromUtf8("label_7"));
+
+        horizontalLayout_11->addWidget(label_7);
+
+        addListButton = new QPushButton(bills);
+        addListButton->setObjectName(QString::fromUtf8("addListButton"));
+
+        horizontalLayout_11->addWidget(addListButton);
+
+        showListButton = new QPushButton(bills);
+        showListButton->setObjectName(QString::fromUtf8("showListButton"));
+
+        horizontalLayout_11->addWidget(showListButton);
+
+
+        verticalLayout_9->addLayout(horizontalLayout_11);
+
+        tableList = new QTableWidget(bills);
+        if (tableList->columnCount() < 2)
+            tableList->setColumnCount(2);
+        QTableWidgetItem *__qtablewidgetitem22 = new QTableWidgetItem();
+        tableList->setHorizontalHeaderItem(0, __qtablewidgetitem22);
+        QTableWidgetItem *__qtablewidgetitem23 = new QTableWidgetItem();
+        tableList->setHorizontalHeaderItem(1, __qtablewidgetitem23);
+        tableList->setObjectName(QString::fromUtf8("tableList"));
+
+        verticalLayout_9->addWidget(tableList);
+
+        horizontalLayout_10 = new QHBoxLayout();
+        horizontalLayout_10->setSpacing(6);
+        horizontalLayout_10->setContentsMargins(5, 5, 5, 5);
+        horizontalLayout_10->setObjectName(QString::fromUtf8("horizontalLayout_10"));
+        label_9 = new QLabel(bills);
+        label_9->setObjectName(QString::fromUtf8("label_9"));
+
+        horizontalLayout_10->addWidget(label_9);
+
+        labelTotal = new QLabel(bills);
+        labelTotal->setObjectName(QString::fromUtf8("labelTotal"));
+
+        horizontalLayout_10->addWidget(labelTotal);
+
+        label_8 = new QLabel(bills);
+        label_8->setObjectName(QString::fromUtf8("label_8"));
+
+        horizontalLayout_10->addWidget(label_8);
+
+        labelSum = new QLabel(bills);
+        labelSum->setObjectName(QString::fromUtf8("labelSum"));
+
+        horizontalLayout_10->addWidget(labelSum);
+
+
+        verticalLayout_9->addLayout(horizontalLayout_10);
+
+
+        horizontalLayout_6->addLayout(verticalLayout_9);
+
+
+        verticalLayout_2->addWidget(bills);
+
+        customers = new QWidget(verticalLayoutWidget);
+        customers->setObjectName(QString::fromUtf8("customers"));
+        horizontalLayout_8 = new QHBoxLayout(customers);
+        horizontalLayout_8->setSpacing(6);
+        horizontalLayout_8->setContentsMargins(5, 5, 5, 5);
+        horizontalLayout_8->setObjectName(QString::fromUtf8("horizontalLayout_8"));
+        verticalLayout_5 = new QVBoxLayout();
+        verticalLayout_5->setSpacing(6);
+        verticalLayout_5->setContentsMargins(5, 5, 5, 5);
+        verticalLayout_5->setObjectName(QString::fromUtf8("verticalLayout_5"));
+        horizontalLayout_9 = new QHBoxLayout();
+        horizontalLayout_9->setSpacing(6);
+        horizontalLayout_9->setContentsMargins(5, 5, 5, 5);
+        horizontalLayout_9->setObjectName(QString::fromUtf8("horizontalLayout_9"));
+        label_5 = new QLabel(customers);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+
+        horizontalLayout_9->addWidget(label_5);
+
+        addCustButton = new QPushButton(customers);
+        addCustButton->setObjectName(QString::fromUtf8("addCustButton"));
+
+        horizontalLayout_9->addWidget(addCustButton);
+
+        showCustButton = new QPushButton(customers);
+        showCustButton->setObjectName(QString::fromUtf8("showCustButton"));
+
+        horizontalLayout_9->addWidget(showCustButton);
+
+
+        verticalLayout_5->addLayout(horizontalLayout_9);
+
+        tableCust = new QTableWidget(customers);
+        if (tableCust->columnCount() < 5)
+            tableCust->setColumnCount(5);
+        QTableWidgetItem *__qtablewidgetitem24 = new QTableWidgetItem();
+        tableCust->setHorizontalHeaderItem(0, __qtablewidgetitem24);
+        QTableWidgetItem *__qtablewidgetitem25 = new QTableWidgetItem();
+        tableCust->setHorizontalHeaderItem(1, __qtablewidgetitem25);
+        QTableWidgetItem *__qtablewidgetitem26 = new QTableWidgetItem();
+        tableCust->setHorizontalHeaderItem(2, __qtablewidgetitem26);
+        QTableWidgetItem *__qtablewidgetitem27 = new QTableWidgetItem();
+        tableCust->setHorizontalHeaderItem(3, __qtablewidgetitem27);
+        QTableWidgetItem *__qtablewidgetitem28 = new QTableWidgetItem();
+        tableCust->setHorizontalHeaderItem(4, __qtablewidgetitem28);
+        tableCust->setObjectName(QString::fromUtf8("tableCust"));
+
+        verticalLayout_5->addWidget(tableCust);
+
+
+        horizontalLayout_8->addLayout(verticalLayout_5);
+
+
+        verticalLayout_2->addWidget(customers);
+
+        horizontalLayout_5 = new QHBoxLayout();
+        horizontalLayout_5->setSpacing(6);
+        horizontalLayout_5->setContentsMargins(5, 5, 5, 5);
+        horizontalLayout_5->setObjectName(QString::fromUtf8("horizontalLayout_5"));
+        label_6 = new QLabel(verticalLayoutWidget);
+        label_6->setObjectName(QString::fromUtf8("label_6"));
+
+        horizontalLayout_5->addWidget(label_6);
+
+        comboBoxUser = new QComboBox(verticalLayoutWidget);
+        comboBoxUser->setObjectName(QString::fromUtf8("comboBoxUser"));
+
+        horizontalLayout_5->addWidget(comboBoxUser);
+
+        userButton = new QPushButton(verticalLayoutWidget);
+        userButton->setObjectName(QString::fromUtf8("userButton"));
+
+        horizontalLayout_5->addWidget(userButton);
+
+        billButton = new QPushButton(verticalLayoutWidget);
+        billButton->setObjectName(QString::fromUtf8("billButton"));
+
+        horizontalLayout_5->addWidget(billButton);
+
+        makersButton = new QPushButton(verticalLayoutWidget);
+        makersButton->setObjectName(QString::fromUtf8("makersButton"));
+
+        horizontalLayout_5->addWidget(makersButton);
+
+        custoersButton = new QPushButton(verticalLayoutWidget);
+        custoersButton->setObjectName(QString::fromUtf8("custoersButton"));
+
+        horizontalLayout_5->addWidget(custoersButton);
+
+        spoilerButton = new QPushButton(verticalLayoutWidget);
+        spoilerButton->setObjectName(QString::fromUtf8("spoilerButton"));
+
+        horizontalLayout_5->addWidget(spoilerButton);
+
+
+        verticalLayout_2->addLayout(horizontalLayout_5);
+
+        MainWindow->setCentralWidget(centralWidget);
+        menuBar = new QMenuBar(MainWindow);
+        menuBar->setObjectName(QString::fromUtf8("menuBar"));
+        menuBar->setGeometry(QRect(0, 0, 1097, 21));
+        MainWindow->setMenuBar(menuBar);
+        mainToolBar = new QToolBar(MainWindow);
+        mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
+        MainWindow->addToolBar(Qt::TopToolBarArea, mainToolBar);
+        statusBar = new QStatusBar(MainWindow);
+        statusBar->setObjectName(QString::fromUtf8("statusBar"));
+        MainWindow->setStatusBar(statusBar);
+
+        retranslateUi(MainWindow);
+
+        QMetaObject::connectSlotsByName(MainWindow);
+    } // setupUi
+
+    void retranslateUi(QMainWindow *MainWindow)
+    {
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "\320\221\320\260\320\267\320\260 \320\264\320\260\320\275\320\275\321\213\321\205 \321\201\320\272\320\273\320\260\320\264\320\260 \"\320\221\"", 0, QApplication::UnicodeUTF8));
+        label->setText(QApplication::translate("MainWindow", "\320\242\320\276\320\262\320\260\321\200\321\213", 0, QApplication::UnicodeUTF8));
+        CreateDBButton->setText(QApplication::translate("MainWindow", "\320\241\320\276\320\267\320\264\320\260\321\202\321\214 \320\261\320\260\320\267\321\203", 0, QApplication::UnicodeUTF8));
+        InsertButton->setText(QApplication::translate("MainWindow", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \321\202\320\276\320\262\320\260\321\200", 0, QApplication::UnicodeUTF8));
+        ShowButton->setText(QApplication::translate("MainWindow", "\320\236\320\261\320\275\320\276\320\262\320\270\321\202\321\214 \321\201\320\277\320\270\321\201\320\276\320\272", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem = tab->horizontalHeaderItem(0);
+        ___qtablewidgetitem->setText(QApplication::translate("MainWindow", "\320\220\321\200\321\202\320\270\320\272\321\203\320\273", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem1 = tab->horizontalHeaderItem(1);
+        ___qtablewidgetitem1->setText(QApplication::translate("MainWindow", "\320\235\320\260\320\267\320\262\320\260\320\275\320\270\320\265", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem2 = tab->horizontalHeaderItem(2);
+        ___qtablewidgetitem2->setText(QApplication::translate("MainWindow", "\320\237\321\200\320\276\320\270\320\267\320\262\320\276\320\264\320\270\321\202\320\265\320\273\321\214", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem3 = tab->horizontalHeaderItem(3);
+        ___qtablewidgetitem3->setText(QApplication::translate("MainWindow", "\320\227\320\260\320\272\321\203\320\277\320\276\321\207\320\275\320\260\321\217 \321\206\320\265\320\275\320\260", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem4 = tab->horizontalHeaderItem(4);
+        ___qtablewidgetitem4->setText(QApplication::translate("MainWindow", "\320\236\320\277\321\202\320\276\320\262\320\260\321\217 \321\206\320\265\320\275\320\260", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem5 = tab->horizontalHeaderItem(5);
+        ___qtablewidgetitem5->setText(QApplication::translate("MainWindow", "\320\240\320\276\320\267\320\275\320\270\321\207\320\275\320\260\321\217 \321\206\320\265\320\275\320\260", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem6 = tab->horizontalHeaderItem(6);
+        ___qtablewidgetitem6->setText(QApplication::translate("MainWindow", "\320\232\320\276\320\273\320\270\321\207\320\265\321\201\321\202\320\262\320\276", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem7 = tab->horizontalHeaderItem(7);
+        ___qtablewidgetitem7->setText(QApplication::translate("MainWindow", "\320\242\320\270\320\277", 0, QApplication::UnicodeUTF8));
+        label_2->setText(QApplication::translate("MainWindow", "\320\237\321\200\320\276\320\270\320\267\320\262\320\276\320\264\320\270\321\202\320\265\320\273\320\270", 0, QApplication::UnicodeUTF8));
+        addMakerButton->setText(QApplication::translate("MainWindow", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \320\277\321\200\320\276\320\270\320\267\320\262\320\276\320\264\320\270\321\202\320\265\320\273\321\217", 0, QApplication::UnicodeUTF8));
+        showMakerButton->setText(QApplication::translate("MainWindow", "\320\236\320\261\320\275\320\276\320\262\320\270\321\202\321\214", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem8 = tabMaker->horizontalHeaderItem(0);
+        ___qtablewidgetitem8->setText(QApplication::translate("MainWindow", "\320\235\320\276\320\274\320\265\321\200", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem9 = tabMaker->horizontalHeaderItem(1);
+        ___qtablewidgetitem9->setText(QApplication::translate("MainWindow", "\320\235\320\260\320\267\320\262\320\260\320\275\320\270\320\265", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem10 = tabMaker->horizontalHeaderItem(2);
+        ___qtablewidgetitem10->setText(QApplication::translate("MainWindow", "\320\220\320\264\321\200\320\265\321\201", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem11 = tabMaker->horizontalHeaderItem(3);
+        ___qtablewidgetitem11->setText(QApplication::translate("MainWindow", "\320\242\320\265\320\273\320\265\321\204\320\276\320\275", 0, QApplication::UnicodeUTF8));
+        label_3->setText(QApplication::translate("MainWindow", "\320\242\320\270\320\277\321\213 \321\202\320\276\320\262\320\260\321\200\320\276\320\262", 0, QApplication::UnicodeUTF8));
+        addTypeButton->setText(QApplication::translate("MainWindow", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \321\202\320\270\320\277 \321\202\320\276\320\262\320\260\321\200\320\260", 0, QApplication::UnicodeUTF8));
+        showTypeButton->setText(QApplication::translate("MainWindow", "\320\236\320\261\320\275\320\276\320\262\320\270\321\202\321\214", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem12 = tabType->horizontalHeaderItem(0);
+        ___qtablewidgetitem12->setText(QApplication::translate("MainWindow", "\320\235\320\276\320\274\320\265\321\200", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem13 = tabType->horizontalHeaderItem(1);
+        ___qtablewidgetitem13->setText(QApplication::translate("MainWindow", "\320\242\320\270\320\277", 0, QApplication::UnicodeUTF8));
+        label_4->setText(QApplication::translate("MainWindow", "\320\235\320\260\320\272\320\273\320\260\320\264\320\275\321\213\320\265", 0, QApplication::UnicodeUTF8));
+        createBillButton->setText(QApplication::translate("MainWindow", "\320\241\320\276\320\267\320\264\320\260\321\202\321\214", 0, QApplication::UnicodeUTF8));
+        showBillButton->setText(QApplication::translate("MainWindow", "\320\236\320\261\320\275\320\276\320\262\320\270\321\202\321\214", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem14 = tabBill->horizontalHeaderItem(0);
+        ___qtablewidgetitem14->setText(QApplication::translate("MainWindow", "\320\235\320\276\320\274\320\265\321\200", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem15 = tabBill->horizontalHeaderItem(1);
+        ___qtablewidgetitem15->setText(QApplication::translate("MainWindow", "\320\242\320\270\320\277", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem16 = tabBill->horizontalHeaderItem(2);
+        ___qtablewidgetitem16->setText(QApplication::translate("MainWindow", "\320\237\320\276\321\201\321\202\320\260\320\262\321\211\320\270\320\272", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem17 = tabBill->horizontalHeaderItem(3);
+        ___qtablewidgetitem17->setText(QApplication::translate("MainWindow", "\320\237\320\276\320\272\321\203\320\277\320\260\321\202\320\265\320\273\321\214", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem18 = tabBill->horizontalHeaderItem(4);
+        ___qtablewidgetitem18->setText(QApplication::translate("MainWindow", "\320\242\320\276\320\262\320\260\321\200", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem19 = tabBill->horizontalHeaderItem(5);
+        ___qtablewidgetitem19->setText(QApplication::translate("MainWindow", "\320\234\320\265\320\275\320\265\320\264\320\266\320\265\321\200", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem20 = tabBill->horizontalHeaderItem(6);
+        ___qtablewidgetitem20->setText(QApplication::translate("MainWindow", "\320\224\320\260\321\202\320\260", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem21 = tabBill->horizontalHeaderItem(7);
+        ___qtablewidgetitem21->setText(QApplication::translate("MainWindow", "\320\236\320\277\320\273\320\260\321\207\320\265\320\275\320\276", 0, QApplication::UnicodeUTF8));
+        label_7->setText(QApplication::translate("MainWindow", "\320\242\320\276\320\262\320\260\321\200\321\213 \320\262 \320\275\320\260\320\272\320\273\320\260\320\264\320\275\320\276\320\271", 0, QApplication::UnicodeUTF8));
+        addListButton->setText(QApplication::translate("MainWindow", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214", 0, QApplication::UnicodeUTF8));
+        showListButton->setText(QApplication::translate("MainWindow", "\320\236\320\261\320\275\320\276\320\262\320\270\321\202\321\214", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem22 = tableList->horizontalHeaderItem(0);
+        ___qtablewidgetitem22->setText(QApplication::translate("MainWindow", "\320\235\320\260\320\272\320\273\320\260\320\264\320\275\320\260\321\217", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem23 = tableList->horizontalHeaderItem(1);
+        ___qtablewidgetitem23->setText(QApplication::translate("MainWindow", "\320\242\320\276\320\262\320\260\321\200", 0, QApplication::UnicodeUTF8));
+        label_9->setText(QApplication::translate("MainWindow", "\320\222\321\201\320\265\320\263\320\276 \321\202\320\276\320\262\320\260\321\200\320\276\320\262", 0, QApplication::UnicodeUTF8));
+        labelTotal->setText(QString());
+        label_8->setText(QApplication::translate("MainWindow", "\320\241\321\203\320\274\320\274\320\260 \320\277\320\276 \320\275\320\260\320\272\320\273\320\260\320\264\320\275\320\276\320\271", 0, QApplication::UnicodeUTF8));
+        labelSum->setText(QString());
+        label_5->setText(QApplication::translate("MainWindow", "\320\237\320\276\320\272\321\203\320\277\320\260\321\202\320\265\320\273\320\270 \320\270 \320\277\320\276\321\201\321\202\320\260\320\262\321\211\320\270\320\272\320\270", 0, QApplication::UnicodeUTF8));
+        addCustButton->setText(QApplication::translate("MainWindow", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214", 0, QApplication::UnicodeUTF8));
+        showCustButton->setText(QApplication::translate("MainWindow", "\320\236\320\261\320\275\320\276\320\262\320\270\321\202\321\214", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem24 = tableCust->horizontalHeaderItem(0);
+        ___qtablewidgetitem24->setText(QApplication::translate("MainWindow", "\320\235\320\276\320\274\320\265\321\200", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem25 = tableCust->horizontalHeaderItem(1);
+        ___qtablewidgetitem25->setText(QApplication::translate("MainWindow", "\320\244\320\230\320\236", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem26 = tableCust->horizontalHeaderItem(2);
+        ___qtablewidgetitem26->setText(QApplication::translate("MainWindow", "\320\220\320\264\321\200\320\265\321\201", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem27 = tableCust->horizontalHeaderItem(3);
+        ___qtablewidgetitem27->setText(QApplication::translate("MainWindow", "\320\242\320\265\320\273\320\265\321\204\320\276\320\275", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem28 = tableCust->horizontalHeaderItem(4);
+        ___qtablewidgetitem28->setText(QApplication::translate("MainWindow", "\320\242\320\270\320\277", 0, QApplication::UnicodeUTF8));
+        label_6->setText(QApplication::translate("MainWindow", "\320\237\320\276\320\273\321\214\320\267\320\276\320\262\320\260\321\202\320\265\320\273\321\214", 0, QApplication::UnicodeUTF8));
+        userButton->setText(QApplication::translate("MainWindow", "\320\222\320\276\320\271\321\202\320\270", 0, QApplication::UnicodeUTF8));
+        billButton->setText(QApplication::translate("MainWindow", "\320\235\320\260\320\272\320\273\320\260\320\264\320\275\321\213\320\265", 0, QApplication::UnicodeUTF8));
+        makersButton->setText(QApplication::translate("MainWindow", "\320\237\321\200\320\276\320\270\320\267\320\262\320\276\320\264\320\270\321\202\320\265\320\273\320\270 \320\270 \321\202\320\270\320\277\321\213 \321\202\320\276\320\262\320\260\321\200\320\276\320\262", 0, QApplication::UnicodeUTF8));
+        custoersButton->setText(QApplication::translate("MainWindow", "\320\237\320\276\320\272\321\203\320\277\320\260\321\202\320\265\320\273\320\270 \320\270 \320\277\320\276\321\201\321\202\320\260\320\262\321\211\320\270\320\272\320\270", 0, QApplication::UnicodeUTF8));
+        spoilerButton->setText(QApplication::translate("MainWindow", "\320\241\320\272\321\200\321\213\321\202\321\214 \320\262\321\201\321\221", 0, QApplication::UnicodeUTF8));
+    } // retranslateUi
+
+};
+
+namespace Ui {
+    class MainWindow: public Ui_MainWindow {};
+} // namespace Ui
+
+QT_END_NAMESPACE
+
+#endif // UI_MAINWINDOW_H

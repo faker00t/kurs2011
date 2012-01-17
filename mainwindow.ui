@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1127</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>База данных склада &quot;Б&quot;</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1111</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0,0,0,0,0,0">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <property name="margin">
+      <number>5</number>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Товары</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="CreateDBButton">
+         <property name="text">
+          <string>Информация</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="InsertButton">
+         <property name="text">
+          <string>Добавить товар</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="ShowButton">
+         <property name="text">
+          <string>Обновить список</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="userButton">
+         <property name="text">
+          <string>Войти</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTableWidget" name="tab">
+       <column>
+        <property name="text">
+         <string>Артикул</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Название</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Производитель</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Закупочная цена</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Оптовая цена</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Розничная цена</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Количество</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Тип</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="makers" native="true">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <property name="margin">
+         <number>5</number>
+        </property>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <property name="margin">
+           <number>5</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <property name="margin">
+             <number>5</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>Производители</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="addMakerButton">
+              <property name="text">
+               <string>Добавить производителя</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="showMakerButton">
+              <property name="text">
+               <string>Обновить</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="tabMaker">
+            <column>
+             <property name="text">
+              <string>Номер</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Название</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Адрес</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Телефон</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="margin">
+           <number>5</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <property name="margin">
+             <number>5</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>Типы товаров</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="addTypeButton">
+              <property name="text">
+               <string>Добавить тип товара</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="showTypeButton">
+              <property name="text">
+               <string>Обновить</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="tabType">
+            <column>
+             <property name="text">
+              <string>Номер</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Тип</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="bills" native="true">
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <property name="margin">
+         <number>5</number>
+        </property>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <property name="margin">
+           <number>5</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <property name="margin">
+             <number>5</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>Накладные</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="createBillButton">
+              <property name="text">
+               <string>Создать</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="showBillButton">
+              <property name="text">
+               <string>Обновить</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="tabBill">
+            <column>
+             <property name="text">
+              <string>Номер</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Поставщик/Покупатель</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Менеджер</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Дата</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Оплачено</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_9">
+          <property name="margin">
+           <number>5</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_11">
+            <property name="margin">
+             <number>5</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_7">
+              <property name="text">
+               <string>Товары в накладной</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="addListButton">
+              <property name="text">
+               <string>Добавить</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="showListButton">
+              <property name="text">
+               <string>Обновить</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="tableList">
+            <column>
+             <property name="text">
+              <string>Накладная</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Товар</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_10">
+            <property name="margin">
+             <number>5</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_9">
+              <property name="text">
+               <string>Всего товаров</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelTotal">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_8">
+              <property name="text">
+               <string>Сумма по накладной</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelSum">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="customers" native="true">
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <property name="margin">
+         <number>5</number>
+        </property>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <property name="margin">
+           <number>5</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <property name="margin">
+             <number>5</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string>Покупатели и поставщики</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="addCustButton">
+              <property name="text">
+               <string>Добавить</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="showCustButton">
+              <property name="text">
+               <string>Обновить</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="tableCust">
+            <column>
+             <property name="text">
+              <string>Номер</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>ФИО</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Адрес</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Телефон</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Тип</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="workers" native="true">
+       <layout class="QHBoxLayout" name="horizontalLayout_12">
+        <property name="margin">
+         <number>5</number>
+        </property>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <property name="margin">
+           <number>5</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_13">
+            <property name="margin">
+             <number>5</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_10">
+              <property name="text">
+               <string>Сотрудники</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="addWorkersButton">
+              <property name="text">
+               <string>Добавить</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="showWorkersButton">
+              <property name="text">
+               <string>Обновить</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="tableWorkers">
+            <column>
+             <property name="text">
+              <string>Номер</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Имя</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Адрес</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Телефон</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Логин</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Пароль</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <property name="margin">
+        <number>5</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Пользователь</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBoxUser"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="billButton">
+         <property name="text">
+          <string>Накладные</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="makersButton">
+         <property name="text">
+          <string>Производители и типы товаров</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="custoersButton">
+         <property name="text">
+          <string>Покупатели и поставщики</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="workersButton">
+         <property name="text">
+          <string>Сотрудники</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="spoilerButton">
+         <property name="text">
+          <string>Скрыть всё</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1127</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
